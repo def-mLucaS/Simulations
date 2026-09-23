@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="ce13__projeto_ibitucatu" id="ce13__projeto_ibitucatu">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+	<SimpleField name="snippet" type="string"></SimpleField>
+</Schema>
+<Folder><name>ce13__projeto_ibitucatu</name>
+  <Placemark>
+	<name>Poligonal CE-13 - Projeto Ibitucatu</name>
+	<description>&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;&quot;&gt;
+
+
+&lt;table style=&quot;font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px&quot;&gt;
+
+
+
+&lt;tr bgcolor=&quot;#D4E4F3&quot;&gt;
+
+&lt;td&gt;Código&lt;/td&gt;
+
+&lt;td&gt;CE-13&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Usina&lt;/td&gt;
+
+&lt;td&gt;Projeto Ibitucatu&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;#D4E4F3&quot;&gt;
+
+&lt;td&gt;Processo&lt;/td&gt;
+
+&lt;td&gt;02001.008209/2022-51&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Aberto em&lt;/td&gt;
+
+&lt;td&gt;2022-04-06&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;#D4E4F3&quot;&gt;
+
+&lt;td&gt;Potência&lt;/td&gt;
+
+&lt;td&gt;2010 MW&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Torres&lt;/td&gt;
+
+&lt;td&gt;134&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;#D4E4F3&quot;&gt;
+
+&lt;td&gt;Área (km2)&lt;/td&gt;
+
+&lt;td&gt;499&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Titular&lt;/td&gt;
+
+&lt;td&gt;Equinor Brasil Energia&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ce13__projeto_ibitucatu">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="snippet"></SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-40.2927561384609,-2.46970476997063,0 -39.9968172155768,-2.48493111681785,0 -39.9939236091792,-2.34735051235222,0 -40.2872074908122,-2.33237405813504,0 -40.2927561384609,-2.46970476997063,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

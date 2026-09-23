@@ -1,0 +1,133 @@
+Modelo,Potencia_nominal_MW,Tipo_transmissao,Fator_capacidade_%,Custo_unitario_MUSD
+AGW 172-7.0,7.0,Tres estagios,50,24.5
+AM 5.7/163,5.7,Não definido,50,19.95
+AM 6.0/139,6.0,Não definido,50,21.0
+AM 6.0/154,6.0,Não definido,50,21.0
+AMSC WT10000 DD,10.0,Direct Drive,55,40.0
+DEC FD119A,3.0,Não definido,45,8.4
+DEW-10.0-185,10.0,Tres estagios,55,40.0
+DEW-11-185,11.0,Não definido,55,44.0
+DEW-5.5MW-140,5.5,Não definido,50,19.25
+DEW-7.5MW-186,7.5,Não definido,50,26.25
+DEW-D13-211,13.0,Direct Drive,58,54.6
+DEW-D13-245,13.0,Não definido,58,54.6
+DEW-D7-186,7.0,Direct Drive,50,24.5
+DEW-G5000-140,5.0,Não definido,50,17.5
+DEW-H10-242,10.0,Não definido,55,40.0
+EN-130/4.2,4.2,Não definido,45,11.76
+EN-136/4.2,4.2,Não definido,45,11.76
+EN-148/4.5,4.5,Não definido,45,12.6
+EN-252/14,14.0,Não definido,58,58.8
+EN-256/16.7,16.7,Não definido,58,70.14
+EW11.0-208/W11000-208,11.0,Direct Drive,55,44.0
+EW12.X-252,12.0,Não definido,58,50.4
+GW 109-2.5MW,2.5,Não definido,45,7.0
+GW 121-2.5MW,2.5,Não definido,45,7.0
+GW 130-2.5MW,2.5,Não definido,45,7.0
+GW 154-6.7MW,6.7,Não definido,50,23.45
+GW 155-4.0MW,4.0,Não definido,45,11.2
+GW 155-4.5MW,4.5,Não definido,45,12.6
+GW 164-6.45MW,6.45,Não definido,50,22.57
+GW 168-6.45MW,6.45,Não definido,50,22.57
+GW 171-6.45MW,6.45,Não definido,50,22.57
+GW 184-6.45MW,6.45,Não definido,50,22.57
+GW 82-1.5MW,1.5,Não definido,45,4.2
+EW25.0-310,25.0,Não definido,58,105.0
+EW8-167 / W8000-167,8.0,Direct Drive,55,32.0
+GWH 168-8.0,8.0,Direct Drive,55,32.0
+GWH 175-8.0,8.0,Direct Drive,55,32.0
+GWH 242-12.0,12.0,Gear Box,58,50.4
+GWH 252-16,16.0,Não definido,58,67.2
+H127-5MW,5.0,Não definido,50,17.5
+H151-5MW,5.0,Não definido,50,17.5
+H152-6.2MW,6.2,Não definido,50,21.7
+H171-5.0MW,5.0,Não definido,50,17.5
+H171-6.2MW,6.2,Não definido,50,21.7
+GWH 252-13.6,13.6,Não definido,58,57.12
+GWH 252-14.3,14.3,Não definido,58,60.06
+H210-10,10.0,Tres estagios,55,40.0
+H210-12,12.0,Não definido,58,50.4
+HTW2.0-80,2.0,Não definido,45,5.6
+HTW5.2-127,5.2,Não definido,50,18.2
+HTW5.2-136,5.2,Não definido,50,18.2
+Haliade 150-6MW,6.0,Não definido,50,21.0
+H220-10.0,10.0,Tres estagios,55,40.0
+H260-18 ,18.0,Tres estagios,58,75.6
+Haliade-X 12 MW,12.0,Direct Drive,58,50.4
+Haliade-X 13 MW,13.0,Direct Drive,58,54.6
+Haliade-X 14 MW,14.0,Direct Drive,58,58.8
+MySE10-242,10.0,Não definido,55,40.0
+MySE11-203,11.0,Não definido,55,44.0
+MySE11-230,11.0,Tres estagios,55,44.0
+MySE12-242,12.0,Não definido,58,50.4
+MySE14-260,14.0,Não definido,58,58.8
+MySE16.6(T)-182,16.6,Não definido,58,69.72
+MySE16-242,16.0,Tres estagios,58,67.2
+MySE16-260,16.0,Não definido,58,67.2
+MySE2.5-135,2.5,Não definido,45,7.0
+MySE2.5-145,2.5,Não definido,45,7.0
+MySE18.X-20,20.0,Não definido,58,84.0
+MySE3.0-121,3.0,Não definido,45,8.4
+MySE3.0-135,3.0,Não definido,45,8.4
+MySE3.2-145,3.2,Não definido,45,8.96
+MySE3.6-135,3.6,Não definido,45,10.08
+MySE4.0-145,4.0,Não definido,45,11.2
+MySE4.0-156,4.0,Não definido,45,11.2
+MySE5.0-166,5.0,Não definido,50,17.5
+MySE5.5-155,5.5,Não definido,50,19.25
+MySE6.45-180,6.45,Não definido,50,22.57
+MySE18-260,18.0,Não definido,58,75.6
+MySE8.3-180,8.3,Não definido,55,33.2
+NREL-240-15.0MW,15.0,Não definido,58,63.0
+NREL-284-22.0MW,22.0,Não definido,58,92.4
+SCD advanced 6MW,6.0,Não definido,50,21.0
+MySE24-290,24.0,Não definido,58,100.8
+MySE7.0-158,7.0,Tres estagios,50,24.5
+SCD deep float  8MW,8.0,Tres estagios,55,32.0
+SE9320III-S3,2.0,Não definido,45,5.6
+SCD nezzy 8MW,8.0,Tres estagios,55,32.0
+SCD nezzy2 twin-rotor 15,15.0,Tres estagios,58,63.0
+Seawind 18,18.0,Não definido,58,75.6
+SG 10.0-193 DD,10.0,Direct Drive,55,40.0
+SG 11.0-193 DD,11.0,Direct Drive,55,44.0
+SG 11.0-200 DD,11.0,Direct Drive,55,44.0
+SG 14-222 DD,14.0,Direct Drive,58,58.8
+SG 14-236 DD,14.0,Direct Drive,58,58.8
+SL3000/105,3.0,Não definido,45,8.4
+SL3000/113,3.0,Não definido,45,8.4
+SL3000/90,3.0,Não definido,45,8.4
+SL5000/128,5.0,Não definido,50,17.5
+SL5000/155,5.0,Não definido,50,17.5
+SL6000/128,6.0,Não definido,50,21.0
+SL6000/155,6.0,Não definido,50,21.0
+SWT 3.6MW - 116,3.6,Não definido,45,10.08
+SWT-4.0-146,4.0,Não definido,45,11.2
+SWT-6.0-154,6.0,Não definido,50,21.0
+SG 21-276 DD,21.0,Direct Drive,58,88.2
+TZ5000-128,5.0,Não definido,50,17.5
+TZ5000-153,5.0,Não definido,50,17.5
+TZ6000-154,5.0,Não definido,50,17.5
+SG 7.0-154,7.0,Direct Drive,50,24.5
+Unison U151,4.3,Não definido,45,12.04
+SG 8.0-167 DD,8.0,Direct Drive,55,32.0
+V117-4.2MW,4.2,Não definido,45,11.76
+V126-3.45MW,3.45,Não definido,45,9.66
+V150-4.2MW,4.2,Não definido,45,11.76
+TZF10000,10.0,Não definido,55,40.0
+V164-9.5MW,9.5,Não definido,55,38.0
+V174-9.5MW,9.5,Não definido,55,38.0
+Unison U210,10.0,Não definido,55,40.0
+V164-10.0MW,10.0,Tres estagios,55,40.0
+V236-13.6 MW,13.6,Não definido,58,57.12
+W3600-116,3.6,Não definido,45,10.08
+W3600-122-90,3.6,Não definido,45,10.08
+W4000-136-90,4.0,Não definido,45,11.2
+W6.5F-185,6.5,Não definido,50,22.75
+WG5.55F-172,5.5,Não definido,50,19.25
+WinDS 3000TM,3.0,Não definido,45,8.4
+WinDS 5500/140,5.56,Não definido,50,19.46
+WinDS3000/134,3.0,Não definido,45,8.4
+WinDS3300/134,3.3,Não definido,45,9.24
+XD115-5MW,5.0,Não definido,50,17.5
+XE128-5MW,5.0,Não definido,50,17.5
+V236-15.0 MW,15.0,Tres estagios,58,63.0
