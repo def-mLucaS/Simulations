@@ -1,0 +1,13 @@
+# Parametros gerais
+
+# Monopile
+comprimento_incorporacao_estaca_monopile: 20           # m
+
+# Jaqueta
+comprimento_incorporacao_estaca_jaqueta: 20           # m
+"numero_estacas_jaqueta": 3                           # quantidade
+
+# Pa
+percentual_comprimento_pa_dentro_deck: 0.3            # percentual
+
+# Gerais de instalacao

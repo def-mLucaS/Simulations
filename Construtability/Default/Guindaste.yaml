@@ -1,0 +1,6 @@
+# Parametros default para guindaste
+velocidade_media_guindaste: 5                  # m/min
+maxima_capacidade_guindaste: 100               # t
+altura_maxima_guidaste: 50                     # m
+velocidade_maxima_vento_guindaste: 20          # m/s
+taxa_guindaste: 100                            # $

@@ -1,0 +1,104 @@
+# Gerais
+"tempo_pesquisa_com_rov": 1 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_preparar_equipamento_elevacao": 1 # h - Fonte: https://wisdem.github.io/ORBIT/source/phases/install/turbine/doc_TurbineInstall.html#processes
+"tempo_posicionar_local": 2 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+
+# Fundacao
+# Monopile
+"tempo_preparar_equipamento_conducao_monopile": 1 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_fixacao_deck_monopile": 12 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_liberacao_deck_monopile": 3 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"taxa_conducao_estaca_monopile": 20 # m/h - Fonte: Código do Orbit associado ao parâmetro mono_drive_rate > https://github.com/WISDEM/ORBIT/blob/dev/ORBIT/core/defaults/process_times.yaml
+
+# Jaqueta
+"tempo_preparar_equipamento_conducao_jaqueta": 1 # h - Mantido igual a monopile
+"tempo_fixacao_deck_jaqueta": 12 # h - Fonte: Código do Orbit associado ao parâmetro jacket_fasten_time > https://github.com/WISDEM/ORBIT/blob/dev/ORBIT/core/defaults/process_times.yaml
+"tempo_liberacao_deck_jaqueta": 6 # h - Fonte: Código do Orbit associado ao parâmetro jacket_release_time > https://github.com/WISDEM/ORBIT/blob/dev/ORBIT/core/defaults/process_times.yaml
+"taxa_conducao_estaca_jaqueta": 20 # m/h - Mantido igual a monopile
+
+# Gravidade
+"tempo_preparacao_solo_gravidade": 24 # h valor hipotetico
+"posicionar_gravidade": 5 # h - Fonte: Código do Orbit associado a tarefa "Position Substructure" > https://github.com/WISDEM/ORBIT/blob/8eb149eeb2926a98a813c73eb9aec40385009724/ORBIT/phases/install/quayside_assembly_tow/gravity_base.py#L19
+"tempo_enchimento_lastro": 12 # h - Fonte: Código do Orbit associado a tarefa "Pump Ballast" > https://github.com/WISDEM/ORBIT/blob/8eb149eeb2926a98a813c73eb9aec40385009724/ORBIT/phases/install/quayside_assembly_tow/gravity_base.py#L19
+"tempo_fixacao_deck_gravidade": 12 # h valor hipotetico
+"tempo_liberacao_deck_gravidade": 6 # h valor hipotetico
+"tempo_fixar_gravidade_argamassa": 6 # # h - Fonte: Código do Orbit associado a tarefa "Grout GBF"> https://github.com/WISDEM/ORBIT/blob/8eb149eeb2926a98a813c73eb9aec40385009724/ORBIT/phases/install/quayside_assembly_tow/gravity_base.py#L19
+
+# Peca transicao
+"tempo_fixacao_deck_peca_transicao": 8 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_liberacao_deck_peca_transicao": 2 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_parafuso_peca_transicao": 4 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_argamassa_peca_transicao": 2 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_cura_argamassa": 24 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+
+# SecaoTorre
+"tempo_fixacao_deck_secao_torre": 4 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_liberacao_deck_secao_torre": 3 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+
+# Torre
+"tempo_fixacao_deck_torre": 4 # h - Fonte: https://wisdem.github.io/ORBIT/source/phases/install/turbine/doc_TurbineInstall.html#processes
+"tempo_liberacao_deck_torre": 3 # h - Fonte: https://wisdem.github.io/ORBIT/source/phases/install/turbine/doc_TurbineInstall.html#processes
+"tempo_anexar_secao_torre_na_torre_offshore": 6 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_anexar_secao_torre_na_subestrutura_offshore": 6 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_anexar_torre_na_fundacao_offshore": 6 # h - Fonte: https://wisdem.github.io/ORBIT/source/phases/install/turbine/doc_TurbineInstall.html#processes
+
+# Nacele
+"tempo_anexar_nacele_na_torre_offshore": 6 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_fixacao_deck_nacele": 4 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_liberacao_deck_nacele": 3 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+
+# Pa
+"tempo_anexar_pa_hub_offshore": 3.5 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_anexar_pa_na_orelha_coelho_offshore": 5 # h - Valor hipotetico
+"tempo_fixacao_deck_pa": 1.5 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_liberacao_deck_pa": 1 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+
+# Hub
+"tempo_fixacao_deck_hub": 0.5 # h valor hipotetico
+"tempo_liberacao_deck_hub": 0.5 # h valor hipotetico
+
+# Estrela (hub+pas)
+"tempo_fixacao_deck_estrela": 0.5 # h valor hipotetico
+"tempo_liberacao_deck_estrela": 0.5 # h valor hipotetico
+"tempo_anexar_estrela_na_nacele_offshore": 5 # h valor hipotetico
+
+# Hub + Nacele
+"tempo_anexar_hub_nacele_offshore": 1 # h valor hipotetico
+"tempo_fixacao_deck_hub_nacele": 0.5 # h valor hipotetico
+"tempo_liberacao_deck_hub_nacele": 0.5 # h valor hipotetico
+"tempo_anexar_hub_nacele_na_torre_offshore": 3 # h valor hipotetico
+
+# Orelha Coelho Nacele
+"tempo_anexar_orelha_coelho_na_subestrutura_offshore": 5 # h valor hipotetico
+"tempo_fixacao_deck_orelha_coelho_nacele": 0.5 # h valor hipotetico
+"tempo_liberacao_deck_orelha_coelho_nacele": 0.5 # h valor hipotetico
+
+# Aerogerador completo
+"tempo_anexar_aerogerador_completo_na_fundacao_offshore": 5 # h valor hipotetico
+"tempo_fixacao_deck_aerogerador_completo": 5 # h valor hipotetico
+"tempo_liberacao_deck_aerogerador_completo": 5 # h valor hipotetico
+
+# Eletrica geral
+"tempo_testar_terminar_cabo": 5.5 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_puxar_cabo_para_dentro_turbina_ou_subestacao": 5.5 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"taxa_colocacao_aterramento": 0.3 # km/h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_emendar_cabo": 48 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_descer_cabo_fundo_do_mar": 1 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_carregar_cabo_porto": 6 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_elevar_cabo": 0.5 # h - Fonte: parametro cable_raise_time https://github.com/WISDEM/ORBIT/blob/5235f41197d0c22160aa34c213d763a532fb892b/ORBIT/core/defaults/process_times.yaml#L20
+
+# Subestacao
+"tempo_anexar_subestacao_na_fundacao_offshore": 6 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_fixacao_deck_subestacao": 12 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+"tempo_liberacao_deck_subestacao": 2 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+
+# Sistema array
+"tempo_posicionar_instalar_cabo": 2 # h valor ORBIT
+"tempo_preparar_cabo": 1 # h - Fonte: https://www.nrel.gov/docs/fy20osti/77081.pdf
+
+# Cabo exportacao
+"taxa_cavar_trincheira": 0.1 # km/h valor ORBIT
+"taxa_preparar_solo_arado": 5 # km/h valor ORBIT
+"taxa_puxar_cabo_guincho": 5 # km/h valor ORBIT
+"taxa_guiar_cabo_exportacao": 0.3 # km/h valor ORBIT
+"tempo_testar_terminar_cabo_exportacao": 5.5 # h valor ORBIT

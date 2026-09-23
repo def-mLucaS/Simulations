@@ -1,0 +1,13 @@
+# Parametros default para embarcacoes em geral
+maxima_altura_onda: 3            # [m]
+maxima_velocidade_vento: 15       # [m/s]
+maxima_profundidade_agua: 80       # [m]
+
+
+# Parametros default para wtiv
+comprimento_perna_wtiv: 0                           # m
+profundidade_maxima_wtiv: 99999999                  # m
+extensão_maxima_wtiv: 99999999                      # m
+velocidade_abaixo_profundidade_wtiv: 1              # m/s
+velocidade_acima_profundidade_wtiv: 1               # m/s
+

@@ -1,0 +1,8 @@
+# Valores default para os custos
+# porto:
+custo_porto_mensal: 2e6 # USD/mes
+
+# embarcacao
+taxa_diaria_embarcacao: 40000 # US$/dia
+taxa_mobilizacao_embarcacao: 40000 # US$/dia
+

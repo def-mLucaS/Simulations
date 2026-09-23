@@ -1,0 +1,11 @@
+from enum import Enum
+
+
+class EtapaInstalacao(Enum):
+    FUNDACAO = 1
+    SUBESTACAO_FUNDACAO = 2
+    SUBESTACAO_CAIXA = 3
+    SISTEMA_ARRAY = 4
+    CABO_EXPORTACAO_ONSHORE = 5
+    CABO_EXPORTACAO_OFFSHORE = 6
+    AEROGERADOR = 7
