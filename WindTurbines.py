@@ -114,3 +114,6 @@ def power_curve_generator(
         df_bpc = df_bpc / (P * 1e-3)
 
     return df_bpc
+
+def SpreadWindTurbines():
+    pass

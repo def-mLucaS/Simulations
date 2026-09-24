@@ -37,5 +37,5 @@ def NearestPort(gdf_utm: gpd.GeoDataFrame, ports: str = 'Portos.csv') -> gpd.Geo
 
     porto = gdf_ports_utm['nome_geral'].iloc[nearest_indices[0]]
 
-    return porto
+    resultado_localidade.set(f"Porto: {porto}")
     
