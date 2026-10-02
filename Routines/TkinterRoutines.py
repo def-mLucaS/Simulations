@@ -1,7 +1,11 @@
+import pandas as pd
+import numpy as np
+import os
 from tkinter import *
 from tkinter import ttk, messagebox, filedialog
-import os 
 from Routines.KML import LoadKML, NearestPort
+from Wind_Turbines.Tasks import CountAero
+from pathlib import Path
 
 
 def OpenFolder(planta_var):
@@ -25,13 +29,15 @@ def OpenFolder(planta_var):
         global kml_path_selected
         kml_path_selected = selected_archive
 
-def ClickBtn(resultado_PE, planta_var):
-    # 1. Pega o valor da energia digitado e atualiza a segunda frase azul
+def ClickBtn(resultado_PE, resultado_localidade, planta_var, PE):
+
     valor_pe = PE.get()
-    resultado_PE.set(f"Produção de energia em(GW): {valor_pe}")
+    nome_kml = planta_var.get()
     
-    # 2. Executa o cálculo do porto mais próximo
-    NearestPort(LoadKML(planta_var.get()))
+    resultado_localidade.set(f"Localidade escolhida: {nome_kml}")
+    resultado_PE.set(f"Produção de energia: {valor_pe} GW")
+
+    NearestPort(LoadKML(planta_var.get()), resultado_localidade)
 
 def ChooseAero(tabela, event=None):
 
@@ -54,22 +60,37 @@ def ChooseAero(tabela, event=None):
     else:
         print("Seleção Cancelada")
 
-def Aerodt(aero_dt, container, frame, tabela):
+def Aerodt(energy_desired, planta_var, container, frame, tabela):
 
+    valor_pe = energy_desired.get().replace(",", ".")
+    valor_pe = float(valor_pe)
+
+    coords = LoadKML(planta_var.get())
+
+    if coords is None:
+        messagebox.showerror("Erro", "A função LoadKML retornou Vazio (None). Verifique o conteúdo do arquivo KML selecionado.")
+        return
+
+    df_calc = CountAero(coords, valor_pe)
+    
+    # 3. Atualiza a interface (mostra o container e o frame)
     container.pack(fill="both", expand=False, pady=5)
     frame.pack(fill='x', pady=5)
-
+    
+    # 4. Limpa a tabela antiga
     for item in tabela.get_children():
         tabela.delete(item)
         
-    # Inserir cada linha calculada do DataFrame na tabela do Tkinter
-    for _, row in aero_dt.iterrows():
+    # 5. Insere as linhas atualizadas
+    for _, row in df_calc.iterrows():
         tabela.insert(
             "", 
             "end", 
             values=(
-                row["Modelo"], 
+                row["Modelo"],
+                row['Numero de Aerogeradores Necessarios'],
+                row['Quantidade Maxima de espaço'],
                 row["Custo_Unitario_USD"],
-                row['Transmissao'] 
+                row['Transmissao']
             )
         )

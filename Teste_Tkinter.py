@@ -2,7 +2,6 @@ import os
 import pandas as pd
 from tkinter import *
 from tkinter import ttk, messagebox, filedialog
-from Routines.KML import LoadKML, NearestPort
 from Routines.TkinterRoutines import OpenFolder, ClickBtn, ChooseAero, Aerodt
 
 
@@ -15,8 +14,6 @@ frame_esquerda = ttk.Frame(app)
 frame_esquerda.pack(side='left', fill='y', padx=20, pady=20)
 
 ttk.Label(frame_esquerda, text='Escolha a localidade da planta eólica offshore', foreground="black", font=("Arial", 10, "bold")).pack(anchor='w', pady=2)
-planta_var = StringVar()
-planta_var.set("Nenhum arquivo selecionado")
 btn_search = ttk.Button(frame_esquerda, text='Procurar KML...', command=lambda: OpenFolder(planta_var))
 btn_search.pack(anchor='w', pady=2)
 
@@ -36,11 +33,45 @@ winds = ttk.Combobox(frame_esquerda, values=direct_winds, foreground="black", fo
 winds.pack(anchor='w', pady=2)
 winds.set(direct_winds[0])
 
-botao = ttk.Button(frame_esquerda, text='Confirmar', command= lambda: ClickBtn(resultado_PE, planta_var))
-botao.pack(anchor='w', pady=2)
-
+planta_var = StringVar()
 resultado_localidade = StringVar()
 resultado_PE = StringVar()
+
+botao = ttk.Button(frame_esquerda, text='Confirmar', command= lambda: ClickBtn(resultado_PE, resultado_localidade ,planta_var, PE))
+botao.pack(anchor='w', pady=2)
+
+# --- 1. Rótulo para mostrar a localidade escolhida ---
+label_resultado_planta = ttk.Label(
+    frame_esquerda, 
+    textvariable=planta_var, 
+    font=("Arial", 10, "bold"), 
+    foreground="#004080"
+)
+label_resultado_planta.pack(anchor='w', pady=2)
+
+
+# --- 2. Rótulo para mostrar o porto escolhido ---
+label_resultado_localidade = ttk.Label(
+    frame_esquerda, 
+    textvariable=resultado_localidade, 
+    font=("Arial", 10, "bold"), 
+    foreground="#004080"
+)
+label_resultado_localidade.pack(anchor='w', pady=2)
+
+# --- 3. Rótulo para mostrar a energia informada ---
+label_resultado_pe = ttk.Label(
+    frame_esquerda, 
+    textvariable=resultado_PE, 
+    font=("Arial", 10, "bold"), 
+    foreground="#004080"
+)
+label_resultado_pe.pack(anchor='w', pady=2)
+
+ttk.Label(frame_esquerda, text='Escolher Aerogerador').pack(anchor='w', pady=15)
+aero_btn = ttk.Button(frame_esquerda, text='Escolher', command = lambda: Aerodt(PE,planta_var, container_tabela, frame_botao_direita, tabela))
+aero_btn.pack(anchor='w', pady=2)
+
 
 frame_direita = ttk.Frame(app)
 frame_direita.pack(side='right', fill='both',expand=True, padx=20, pady=20, anchor='n')
@@ -49,17 +80,21 @@ estilo = ttk.Style(app)
 estilo.configure("Treeview.Heading", font=('Arial', 10, 'bold'))
 
 container_tabela = ttk.Frame(frame_direita)
-colunas_tabela = ("Modelo", "Custo_Unitario_USD", "Transmissao")
+colunas_tabela = ("Modelo", "Quantidade Minima de  Aerogeradores", "Quantidade Maxima de espaço","Custo_Unitario_USD", "Transmissao")
 tabela = ttk.Treeview(container_tabela, columns=colunas_tabela, show="headings", height=53)
 
 tabela.heading("Modelo", text="Modelo")
+tabela.heading("Numero de Aerogeradores Necessarios", text='Numero de Aerogeradores Necessarios')
+tabela.heading("Quantidade Maxima de espaço", text='Quantidade Maxima de espaço')
 tabela.heading("Custo_Unitario_USD", text="Custo_Unitario_USD")
 tabela.heading("Transmissao", text='Transmissao')
 
 # Configurar a largura e o alinhamento de cada coluna para melhor visualização
-tabela.column("Modelo", width=180, anchor="w")
-tabela.column("Custo_Unitario_USD", width=180, anchor="center")
-tabela.column("Transmissao", width=180, anchor='center')
+tabela.column("Modelo", width=130, anchor="w")
+tabela.column("Numero de Aerogeradores Necessarios",width=130, anchor='center')
+tabela.column("Quantidade Maxima de espaço", width=130, anchor='center')
+tabela.column("Custo_Unitario_USD", width=130, anchor="center")
+tabela.column("Transmissao", width=130, anchor='center')
 
 scrollbar = ttk.Scrollbar(frame_direita, orient="vertical", command=tabela.yview)
 tabela.configure(yscrollcommand=scrollbar.set)
@@ -74,14 +109,5 @@ btn_choose = ttk.Button(
     command = lambda: ChooseAero(tabela)
 )
 btn_choose.pack(side='right', pady=5)
-
-pt = pd.read_csv("C:\\Users\\Lucas\\Downloads\\DOWNLOADS - LUCAS\\PIBIT\\Simulations\\Datasets\\Aerogeradores.csv")
-
-ttk.Label(frame_esquerda, text='Escolher Aerogerador').pack(anchor='w', pady=15)
-aero_btn = ttk.Button(frame_esquerda, text='Escolher', command = lambda: Aerodt(pt, container_tabela, frame_botao_direita, tabela))
-aero_btn.pack(anchor='w', pady=2)
-
-label_resultado_planta = ttk.Label(frame_esquerda, textvariable=planta_var, foreground="black", font=("Arial", 10, "bold"))
-label_resultado_planta.pack(anchor = 'w', pady=2)
 
 app.mainloop()

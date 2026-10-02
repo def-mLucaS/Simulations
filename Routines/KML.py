@@ -8,17 +8,17 @@ def LoadKML(filename: str) -> gpd.GeoDataFrame:
 
 
 
-    dir = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(dir,"Datasets", "Exemplos", filename)
+    dir = os.path.expanduser('~')
+    path = os.path.join(dir, 'Downloads', 'DOWNLOADS - LUCAS', 'PIBIT', 'Simulations',"Datasets", 'Exemplos', filename)
     gdf_kml = gpd.read_file(path, engine='pyogrio')
     gdf_utm = gdf_kml.to_crs(gdf_kml.estimate_utm_crs()).explode(index_parts=False).reset_index(drop=True)
 
     return gdf_utm
 
-def NearestPort(gdf_utm: gpd.GeoDataFrame, ports: str = 'Portos.csv') -> gpd.GeoDataFrame:
+def NearestPort(gdf_utm: gpd.GeoDataFrame,resultado_localidade, ports: str = 'Portos.csv') -> gpd.GeoDataFrame:
 
-    dir = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(dir,"Datasets", 'Portos.csv')
+    dir = os.path.expanduser('~')
+    path = os.path.join(dir, 'Downloads', 'DOWNLOADS - LUCAS', 'PIBIT', 'Simulations',"Datasets", ports)
 
     ports = pd.read_csv(path)
     gdf_ports = gpd.GeoDataFrame(ports, geometry=gpd.points_from_xy(ports['longitude'], ports['latitude']), crs="EPSG:4326")
